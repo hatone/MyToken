@@ -1,3 +1,10 @@
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+[rpc_endpoints]
+sepolia = "${RPC_URL}"
+
+
 [profile.default]
 src = "src"
 out = "out"
