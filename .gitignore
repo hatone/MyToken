@@ -12,3 +12,8 @@ docs/
 
 # Dotenv file
 .env
+
+# IntelliJ IDEA
+.idea/
+
+lib/
