@@ -8,12 +8,12 @@ contract MyTokenTest is Test {
     MyToken public token;
     address public deployer = address(1);
 
-    function setUp() public {
+    function setUp() public{
         vm.prank(deployer);
         token = new MyToken(1000);
     }
 
-    function testInitialSupply() public {
+    function testInitialSupply() public view{
         assertEq(token.totalSupply(), 1000);
         assertEq(token.balanceOf(deployer), 1000);
     }
