@@ -1,3 +1,9 @@
+## Memo
+```shell
+$ source .env
+$ forge script script/deploy.s.sol --rpc-url $RPC_URL --broadcast --verify -vvvv
+```
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
