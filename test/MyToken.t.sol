@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "../contracts/MyToken.sol";
+import "../src/MyToken.sol";
 
 contract MyTokenTest is Test {
     MyToken public token;
@@ -14,7 +14,7 @@ contract MyTokenTest is Test {
     }
 
     function testInitialSupply() public view{
-        assertEq(token.totalSupply(), 1000);
-        assertEq(token.balanceOf(deployer), 1000);
+        assertEq(token.totalSupply(), 1000000000000000000000);
+        assertEq(token.balanceOf(deployer), 1000000000000000000000);
     }
 }

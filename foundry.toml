@@ -9,5 +9,9 @@ sepolia = "${RPC_URL}"
 src = "src"
 out = "out"
 libs = ["lib"]
+private_key = "${PRIVATE_KEY}"
+
+[profile.default.rpc]
+sepolia = { key = "${RPC_URL}" }
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
