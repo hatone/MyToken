@@ -13,8 +13,13 @@ contract MyTokenTest is Test {
         token = new MyToken(1000);
     }
 
-    function testInitialSupply() public view{
+    function testInitialSupply() public {
         assertEq(token.totalSupply(), 1000000000000000000000);
         assertEq(token.balanceOf(deployer), 1000000000000000000000);
+    }
+
+    function testTokenDescription() public {
+        string memory expectedDescription = "This is my first ERC20 token created with Foundry!";
+        assertEq(token.tokenDescription(), expectedDescription);
     }
 }
